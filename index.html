@@ -6,7 +6,119 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zahid's Philosophy | Home</title>
-    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="style.css"> <!-- Make sure you have a 'style.css' file for styling -->
+    <style>
+        /* Add additional CSS styles here if needed */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav {
+            background-color: #333;
+            text-align: center;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            margin: 0 10px;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        section {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+        }
+
+        section h2 {
+            color: #333;
+        }
+
+        video, iframe {
+            width: 100%;
+            height: auto;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ddd;
+        }
+
+        form h1 {
+            background-color: lime;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        form p {
+            margin: 0;
+            padding: 5px 0;
+        }
+
+        fieldset {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"], input[type="date"], input[type="email"], textarea {
+            width: 100%;
+            padding: 5px;
+        }
+
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+
+        input[type="submit"] {
+            background-color: greenyellow;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+    </style>
 </head>
 
 <body>
@@ -19,46 +131,32 @@
         <a href="#">Videos</a>
         <a href="#">YouTube</a>
         <a href="#">Ask Questions</a>
-        <a href="#">Login\SignUp</a>
+        <a href="#">Login/SignUp</a>
     </nav>
 
     <main>
         <section>
             <h2>Videos</h2>
-
-            <video src="v1.mp4" width="50%" poster="Ep#5T.jpg" controls></video>
-            <video src="v2.mp4" width="50%" poster="Ep#2T.jpg" controls></video>
-            <video src="v3.mp4" width="50%" poster="Ep#3T.jpg" controls></video>
-            <video src="v5.mp4" width="50%" poster="Ep#4T.jpg" controls></video>
+            <video src="v1.mp4" poster="Ep#5T.jpg" controls></video>
+            <video src="v2.mp4" poster="Ep#2T.jpg" controls></video>
+            <video src="v3.mp4" poster="Ep#3T.jpg" controls></video>
+            <video src="v5.mp4" poster="Ep#4T.jpg" controls></video>
         </section>
 
         <section>
             <h2>YouTube</h2>
-            <iframe width="33%" height="315" src="https://www.youtube.com/embed/htYo-S9xGxI"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-            <iframe width="33%" height="315" src="https://www.youtube.com/embed/Vu1MHbXAJWE"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-
-
-
-            <iframe width="33%" height="315" src="https://www.youtube.com/embed/BDCnBhJ-Wss"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/htYo-S9xGxI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/Vu1MHbXAJWE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/BDCnBhJ-Wss" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </section>
 
         <section>
             <h2>Ask Questions</h2>
-            <img src="vegetables.png" width="1320" height="500" alt="this is an image">
+            <img src="vegetables.png" alt="this is an image">
             <form action="">
-                <h1 style="background-color:lime"><br>Contact Us<br>Required Fields are followed by *</h1>
+                <h1><br>Contact Us<br>Required Fields are followed by *</h1>
                 <br>
                 <br>
-
                 <p>
                     <hr>
                     First Name: * <input type="text" name="fname" id="fname" required>
@@ -67,66 +165,49 @@
                     <hr>
                 </p>
                 <p>
-                <fieldset>
-                    <legend>Gender * </legend>
-                    <p>
-                        Male <input type="radio" name="gender" id="male" required>
-                        Female <input type="radio" name="gender" id="female" required>
-                    </p>
-                </fieldset>
-
-                <fieldset>
-                    Birthday * <input type="date" name="birthday" id="birthday" required>
-                </fieldset>
-
-                <fieldset>
-                    <p>Email: * <input type="email" name="email" id="email" required></p>
-                </fieldset>
-
-                <fieldset>
-                    <p>
+                    <fieldset>
+                        <legend>Gender * </legend>
+                        <p>
+                            Male <input type="radio" name="gender" id="male" required>
+                            Female <input type="radio" name="gender" id="female" required>
+                        </p>
+                    </fieldset>
+                    <fieldset>
+                        Birthday * <input type="date" name="birthday" id="birthday" required>
+                    </fieldset>
+                    <fieldset>
+                        Email: * <input type="email" name="email" id="email" required>
+                    </fieldset>
+                    <fieldset>
                         Address: * <textarea name="address" id="address" cols="70" rows="10" required></textarea>
-                    </p>
-                </fieldset>
-
-                <fieldset>
-                    What do you want to say? <textarea name="tellusproblem" id="tellusproblem" cols="70"
-                        rows="10"></textarea>
-                </fieldset>
+                    </fieldset>
+                    <fieldset>
+                        What do you want to say? <textarea name="tellusproblem" id="tellusproblem" cols="70" rows="10"></textarea>
+                    </fieldset>
                 </p>
-                <input style="background-color:greenyellow" type="submit" value="Submit">
+                <input type="submit" value="Submit">
             </form>
-
         </section>
 
         <section>
             <h2>About</h2>
             <img src="Profile Photo.jpg" alt="This is Zahid Pervaiz" width="25%">
             <h3>Zahid Pervaiz</h3>
-
-            <a href="https://www.youtube.com/channel/UCenB5ZRzeeaZ7z9Px5GGXLw"
-                target="_blank">YouTube</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-            <a href="https://www.facebook.com/zahidsphilosophy" target="_blank">Facebook</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-            <a href="https://www.instagram.com/zahidsphilosophy" target="_blank">Instagram</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-            <a href="https://www.linkedin.com/in/zahidparviz/?fbclid=IwAR0Hy93klpaT0GTjM2OKDAxjsGgxN7MC30JxiZwiZ1Y0C8Z3veeaIKz7d_0"
-                target="_blank">LinkedIn</a>&nbsp;&nbsp;&nbsp;
-
-            <h4>I am Zahid Pervaiz doing bachelor's in Computer Science at the University of Gujrat. I am in my fifth
-                semester. Currently on a road to become a full-stack developer.</h4>
+            <a href="https://www.youtube.com/channel/UCenB5ZRzeeaZ7z9Px5GGXLw" target="_blank">YouTube</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="https://www.facebook.com/pzmughal" target="_blank">Facebook</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="https://www.instagram.com/zahidaml" target="_blank">Instagram</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="https://www.linkedin.com/in/zahidparviz/?fbclid=IwAR0Hy93klpaT0GTjM2OKDAxjsGgxN7MC30JxiZwiZ1Y0C8Z3veeaIKz7d_0" target="_blank">LinkedIn</a>&nbsp;&nbsp;&nbsp;
+            <h4>I am Zahid Pervaiz doing bachelor's in Computer Science at the University of Gujrat. I am in my seventh semester. Currently on a road to become a full-stack developer.</h4>
         </section>
-
     </main>
 
     <footer>
         <a href="#">FAQ</a>
         <a href="#">Contact Us</a>
         <a href="#">Terms of Service</a>
-        <a href="#">Privacy policy</a>
+        <a href="#">Privacy Policy</a>
         <a href="#">Refund Policy</a>
-        <a href="#">&copy; 2022 | Zahid's Philosophy</a>
-
-
-
+        &copy; 2022 | Zahid's Philosophy
     </footer>
 </body>
 
